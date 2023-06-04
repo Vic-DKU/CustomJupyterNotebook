@@ -1,0 +1,228 @@
+/* Custom Theme */
+body {
+  background-color: #17212D;
+  color: #CDD2E9;
+  font-family: sans-serif;
+  font-size: 13pt;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+div#notebook {
+  font-family: sans-serif;
+  font-size: 13pt;
+  line-height: 170%;
+  color: #CDD2E9;
+  -webkit-font-smoothing: antialiased !important;
+  padding-top: 25px !important;
+}
+
+div.body {
+  font-family: sans-serif;
+  font-size: 13pt;
+  color: #A2B0C7;
+  background-color: #17212D;
+  background: #17212D;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+  font-family: sans-serif;
+  color: #A2B0C7;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+a:hover,
+a:focus {
+  color: #D8DCEE;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+div#maintoolbar {
+  position: absolute;
+  width: 90%;
+  margin-left: -10%;
+  padding-right: 8%;
+  float: left;
+  background: #17212D !important;
+}
+
+#maintoolbar {
+  margin-bottom: -3px;
+  margin-top: 0px;
+  border: 0px;
+  min-height: 27px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  background: #17212D !important;
+}
+
+#maintoolbar .container {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.cell.code_cell {
+  background-color: #1A2936;
+}
+
+div.cell.code_cell .input_area {
+  background-color: #1A2936;
+}
+
+div.cell.code_cell .input_prompt {
+  color: #AAA;
+}
+
+div.cell.code_cell .CodeMirror {
+  color: #CDD2E9;
+}
+
+div.cell.code_cell .CodeMirror-line span {
+  color: #CDD2E9;
+}
+
+div.cell.code_cell .CodeMirror-activeline-background {
+  background: #122535;
+}
+
+/* Code Syntax Highlighting */
+.cm-s-ipython span.cm-comment {
+  color: #888;
+}
+
+.cm-s-ipython span.cm-keyword {
+  color: #F88;
+}
+
+.cm-s-ipython span.cm-string {
+  color: #8F8;
+}
+
+.cm-s-ipython span.cm-operator {
+  color: #609;
+}
+
+.cm-s-ipython span.cm-number {
+  color: #F88;
+}
+
+.cm-s-ipython span.cm-variable {
+  color: #F39;
+}
+
+/* Output Area */
+div.output_area pre, div.output_subarea {
+  //background-color: #1A2936;
+background-color: #293D4D;
+  color: #EEE;
+}
+
+/* Input Area */
+div.input_area, div.output_prompt {
+  color: #AAA;
+}
+
+/* Cell Background */
+div.cell {
+  background-color: #1A2936;
+}
+
+/* Selected Cell Background */
+div.cell.selected {
+  background-color: #122535 !important;
+}
+
+/* ALL Icon */
+i.fa {
+  font-size: 18px !important;
+  color: #D2B48C !important;
+}
+
+/* 파일 아이콘 */
+i.fa-file:before {
+  content: "\f15b"; /* 파일 아이콘 코드 */
+}
+
+/* 폴더 아이콘 */
+i.fa-folder:before {
+  content: "\f07b"; /* 폴더 아이콘 코드 */
+}
+
+/* 편집 아이콘 */
+i.fa-edit:before {
+  content: "\f040"; /* 편집 아이콘 코드 */
+}
+
+/* 보기 아이콘 */
+i.fa-eye:before {
+  content: "\f06e"; /* 보기 아이콘 코드 */
+}
+
+/* 목록내 폴더 아이콘 */
+.folder_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f07b";
+  color: #D2B48C !important;
+  //background-color: #f5f5f5; /* 베이지 색상 */
+  padding: 2px; /* 아이콘 크기를 조정하기 위한 여백 설정 */
+  font-size: 18px; /* 아이콘 크기를 조정 */
+}
+
+/* 목록내 파일 아이콘 */
+.file_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f15b";
+  position: relative;
+  top: 0px;
+  color: #899ab8 !important;
+  padding: 2px; /* 아이콘 크기를 조정하기 위한 여백 설정 */
+  font-size: 18px; /* 아이콘 크기를 조정 */
+}
+
+/*텍스트 편집기*/
+.cm-s-ipython {
+  background-color: #2b4866; /* 어두운 군청색 배경색으로 수정 */
+  color: #FFFFFF; /* 글자 색상을 하얀색으로 설정 */
+  font-size: 20px; /* 폰트 크기를 조정 */
+  font-family: "Arial", sans-serif; /* 부드러운 글꼴로 변경 */
+}
+
+/* 텍스트 편집기 라인 카운터 */
+.CodeMirror-linenumber {
+  color: #FFFFFF;
+  background-color: #3d5a7a;
+}
+/*라인 카운터 구분자*/
+
+.CodeMirror-linenumber:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff; /* 가로 줄 색상을 변경 */
+  z-index: 1;
+}
+
+.CodeMirror-linenumber span {
+  position: relative;
+  z-index: 2;
+}
+
+
+/*custom.js 파일 연동*/
+
+// 작업 이력 출력
+console.log("%c" + logMessage, "font-size: 12px;");
